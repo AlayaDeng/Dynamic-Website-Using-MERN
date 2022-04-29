@@ -1,0 +1,10 @@
+.heading-h1 {
+    font-size: 200%;
+    color: rgba(89, 11, 24, 0.9);
+}
+
+.heading-h3 {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgba(89, 11, 24, 0.7);
+}

@@ -1,0 +1,51 @@
+.Intro{
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-channel {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.intro-channel-left {
+    margin-left: 40px;
+    width: 640px;
+}
+
+.intro-channel-right {
+    margin-left: 80px;
+    width: 460px;
+}
+
+.channel-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.channel-board {
+    margin: 18px auto 20px 22px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.channel-board-main {
+    width: 400px;
+    text-align: left;
+}
+
+.channel-board-more {
+    width: 70px;
+    text-align: right;
+}
+
+.channel-board-mmain {
+    width: 300px;
+    text-align: left;}
+

@@ -1,0 +1,26 @@
+.resource-board {
+    height: 400px;
+    margin: 100px 80px 80px 80px;
+    background-image: url(../img/bg1.jpg);
+}
+
+.re-board-title {
+    font-size: 30px;
+    padding: 50px 40px;
+    font-weight: 600;
+}
+
+.re-board-font {
+    color: rgb(252, 254, 131);
+}
+
+.re-board-btn {
+    padding: 30px 40px;
+}
+
+.resource-btn {
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    margin: 30px 50px 30px 50px;
+}

@@ -1,0 +1,14 @@
+.algorithmcloud {
+    width: 1100px;
+}
+
+.ac-content {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 50px auto 40px;
+}
+
+.ac-explanation {
+    width: 500px;
+    margin: auto 40px 50px 40px;
+}

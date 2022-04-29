@@ -1,0 +1,43 @@
+.boardtips {
+    margin: 20px 30px 20px 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bt-bookmark {
+    width: 60px;
+    object-fit: contain;
+}
+
+.bt-content {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.bt-brief {
+    display: flex;
+    flex-direction: row;
+}
+
+.bt-img {
+    width: 200px;
+}
+
+.bt-name {
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+.bt-name-top {
+    font-size: 28px;
+}
+
+.bt-full {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.bt-more {
+    color: #590B18;
+}
