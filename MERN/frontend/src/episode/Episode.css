@@ -1,0 +1,14 @@
+.episode {
+    display: flex;
+    flex-direction: column;
+}
+
+.episode-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.episode-click {
+    display: flex;
+    flex-direction: row;
+}

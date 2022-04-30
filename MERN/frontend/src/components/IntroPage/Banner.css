@@ -1,0 +1,44 @@
+.banner {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: #590B18;
+}
+
+.banner-collegeLog {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-logo-college {
+    width: 80px;
+    position: absolute;
+    top: 194px;
+    left: 10px;
+}
+
+.banner-collegeName {
+    position: absolute;
+    top: 210px;
+    left: 100px;
+    color: #16338E;
+}
+
+.banner-collegeName-1 {
+    font-size: 20px;
+}
+
+.banner-collegeName-2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.banner-courseName {
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 194px;
+    left: 450px;
+}

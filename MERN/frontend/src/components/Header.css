@@ -1,0 +1,10 @@
+.header {
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-homepage {
+    position: relative;
+    right: 30px;
+}
