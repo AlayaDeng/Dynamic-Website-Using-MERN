@@ -28,6 +28,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: MERN/package-lock.json
     - run: pwd
-    - run: cd /home/runner/work/Dynamic-Website-Using-MERN/MERN
+    - run: ls
+    - run: cd ./MERN
     - run: npm install --prefix frontend && npm run build --prefix frontend
     - run: npm test
