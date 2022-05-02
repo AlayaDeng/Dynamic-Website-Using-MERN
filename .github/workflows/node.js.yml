@@ -27,6 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: MERN/package-lock.json
-    - run: cd MERN
+    - run: pwd
+    - run: cd /home/runner/work/Dynamic-Website-Using-MERN/MERN
     - run: npm install --prefix frontend && npm run build --prefix frontend
     - run: npm test
