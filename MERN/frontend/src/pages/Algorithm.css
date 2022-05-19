@@ -1,3 +1,48 @@
+
+
+.algorithm-brim {
+    width: 100%;
+    margin: 0 auto;
+    height: 28px;
+    background: #bc8f8f;
+    display: flex;
+    flex-direction: row;
+}
+
+.catalogue-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.catalogue {
+    margin: 10px 2px 75px;
+    width: 160px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#E0E0E0; 
+}
+
+.algorithm-content {
+    margin: 10px 30px 75px 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.algo-algo {
+    margin-top: 60px;
+    align-items: left;
+    text-align: left;
+}
+
+.algo-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .img-mp {
     width: 800px;
 }

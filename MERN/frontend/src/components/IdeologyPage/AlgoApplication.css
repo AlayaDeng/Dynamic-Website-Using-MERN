@@ -1,0 +1,14 @@
+.algoapplication {
+    margin: 30px auto auto 90px
+}
+
+.aa-paper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 26px;
+}
+
+.aa-btn {
+    position: absolute;
+    right: 300px;
+}

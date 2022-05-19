@@ -6,7 +6,7 @@ import { Component } from 'react';
 import './Algorithm.css';
 
 import Scarf from "../components/Scarf";
-import Catalogue from "../components/AlgorithmPage/Catalogue";
+import Catalogue from '../components/algrx/Catalogue';
 import img_mp from '../img/mp.png';
 
 class Algorithm extends Component {

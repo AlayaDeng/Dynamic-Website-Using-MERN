@@ -1,0 +1,10 @@
+.maxflow {
+    width: 920px;
+    display: flex;
+    flex-direction: row;
+}
+
+.episode-click {
+    margin-top: 200px;
+    margin-right: 30px;
+}
