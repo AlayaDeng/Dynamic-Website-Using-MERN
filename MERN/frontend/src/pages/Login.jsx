@@ -56,7 +56,7 @@ function Login() {
     }
 
     return (
-        <>
+        <div style={{backgroundColor:'rgba(251, 238, 226, 0.1)'}}>
         <section className='heading'>
             <h1>
                 Login
@@ -96,7 +96,7 @@ function Login() {
             </div>
             </form>
         </section>
-        </>
+        </div>
     )
 }
 

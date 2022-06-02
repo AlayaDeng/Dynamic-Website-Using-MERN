@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import './SlideShow.css';
 
-
 // img
 import img1 from '../../img/szh.png';
 import img2 from '../../img/xiaochunyun.jpg';

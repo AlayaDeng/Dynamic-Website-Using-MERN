@@ -64,7 +64,7 @@ function Register() {
     }
 
     return (
-        <>
+        <div style={{backgroundColor:'rgba(251, 238, 226, 0.1)'}}>
         <section className='heading'>
             <h1>
                 Register
@@ -125,7 +125,7 @@ function Register() {
             </div>
             </form>
         </section>
-        </>
+        </div>
     )
 }
 
