@@ -9,6 +9,22 @@
     background-color: rgba(251, 238, 226, 0.1);
 }
 
+.intro-channel-container {  
+    display: grid;
+    /* row column */
+    grid-gap: 50px 100px; 
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.intro-channel-item {
+    /* background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
 .intro-channel {
     width: 100%;
     display: flex;

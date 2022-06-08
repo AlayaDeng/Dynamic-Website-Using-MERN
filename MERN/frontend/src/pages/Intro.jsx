@@ -98,140 +98,260 @@ class Intro extends Component {
     
 
     render() {
-        return (
-        <div className='intro'>
-            <div className='ctn'>
-                <Scarf text='课程网站' />
+    return (
+    <div className='intro'>
+        <div className='ctn'>
+            <Scarf text='课程网站' />
+        </div>
+        <div className='intro-brim'>
+            <Banner />
+        </div>
+        <div className='intro-slideShow'>
+            <SlideShow />
+        </div>
+        <div className='intro-channel-container'>
+            <div className='intro-channel-item'>&nbsp;</div>
+            <div className='intro-channel-item'>
+                <TabsUnstyled defaultValue={0}>
+                    <div className='channels'>
+                        <TabsList>
+                            <Tab>课程大纲</Tab>
+                            <Tab>课程内容</Tab>
+                            <Tab>研讨会</Tab>
+                        </TabsList>
+                    </div>
+                    <TabPanel value={0}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div><a href={pdf_2021} download='教学进度表2021'>教学进度表-2021</a></div>
+                                <div><a href={pdf_2020} download='教学大纲2020'>教学大纲-2020</a></div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/courseoutline' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                    <TabPanel value={1}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div>课程内容1</div>
+                                <div>课程内容2</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/coursecontent' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                    <TabPanel value={2}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div onClick={this.openPage1}>数字化转型与数字孪生”校庆…</div>
+                                <div onClick={this.openPage5}>计算机学院举办校庆特邀报告…</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/seminar' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                </TabsUnstyled>
             </div>
-            <div className='intro-brim'>
-                <Banner />
+            <div className='intro-channel-item'>
+                <TabsUnstyled defaultValue={0}>
+                    <div className='channel-line'>
+                        <TabsList>
+                            <TabUn>实战示例</TabUn>
+                        </TabsList>
+                    </div>
+                    <TabPanel value={0}>
+                        <div className='channel-board'>
+                            <div className='channel-board-mmain'>
+                                <div>排序</div>
+                                <div>动态规划</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/algorithm' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                </TabsUnstyled>
             </div>
-            <div className='intro-slideShow'>
-                <SlideShow />
+            <div className='intro-channel-item'>&nbsp;</div>
+            <div className='intro-channel-item'>
+                <TabsUnstyled defaultValue={1}>
+                    <div className='channel-line'>
+                        <TabsList>
+                            <Tab>团队介绍</Tab>
+                            <Tab>课程思政</Tab>
+                        </TabsList>
+                    </div>
+                    <TabPanel value={0}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div>团队介绍1</div>
+                                <div>团队介绍2</div>
+                            </div>
+                            <div className='channel-board-more'>更多</div>
+                        </div>
+                    </TabPanel>
+                    <TabPanel value={1}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div>卓越任务</div>
+                                <div>算法史</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/ideology' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                </TabsUnstyled>
             </div>
-            <div className='intro-channel'>
-                <div className='intro-channel-left'>
-                    <div className='channel-left-top'>
-                    <TabsUnstyled defaultValue={0}>
-                        <div className='channel-line'>
-                            <TabsList>
-                                <Tab>课程大纲</Tab>
-                                <Tab>课程内容</Tab>
-                                <Tab>研讨会</Tab>
-                            </TabsList>
-                            
-                        </div>
-                        <TabPanel value={0}>
-                            <div className='channel-board'>
-                                <div className='channel-board-main'>
-                                    <div><a href={pdf_2021} download='教学进度表2021'>教学进度表-2021</a></div>
-                                    <div><a href={pdf_2020} download='教学大纲2020'>教学大纲-2020</a></div>
-                                </div>
-                                <div className='channel-board-more'>
-                                    <Link to='/courseoutline' ><div>更多</div></Link>
-                                </div>
-                            </div>
-                        </TabPanel>
-                        <TabPanel value={1}>
-                            <div className='channel-board'>
-                                <div className='channel-board-main'>
-                                    <div>课程内容1</div>
-                                    <div>课程内容2</div>
-                                </div>
-                                <div className='channel-board-more'>
-                                    <Link to='/coursecontent' ><div>更多</div></Link>
-                                </div>
-                            </div>
-                        </TabPanel>
-                        <TabPanel value={2}>
-                            <div className='channel-board'>
-                                <div className='channel-board-main'>
-                                    <div onClick={this.openPage1}>数字化转型与数字孪生”校庆…</div>
-                                    <div onClick={this.openPage5}>计算机学院举办校庆特邀报告…</div>
-                                </div>
-                                <div className='channel-board-more'>
-                                    <Link to='/seminar' ><div>更多</div></Link>
-                                </div>
-                            </div>
-                        </TabPanel>
-                    </TabsUnstyled>
+            <div className='intro-channel-item'>
+                <TabsUnstyled defaultValue={0}>
+                    <div className='channel-line'>
+                        <TabsList>
+                            <TabUn>相关资源</TabUn>
+                        </TabsList>
                     </div>
-                    <div className='channel-left-bottom'>
-                    <TabsUnstyled defaultValue={1}>
-                        <div className='channel-line'>
-                            <TabsList>
-                                <Tab>团队介绍</Tab>
-                                <Tab>课程思政</Tab>
-                            </TabsList>
+                    <TabPanel value={0}>
+                        <div className='channel-board'>
+                            <div className='channel-board-mmain'>
+                                <div onClick={this.openEOJ}>ECNU Online Judge</div>
+                                <div onClick={this.openDSVisu}>Data Structure</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/resource' ><div>更多</div></Link>
+                            </div>
                         </div>
-                        <TabPanel value={0}>
-                            <div className='channel-board'>
-                                <div className='channel-board-main'>
-                                    <div>团队介绍1</div>
-                                    <div>团队介绍2</div>
-                                </div>
-                                <div className='channel-board-more'>更多</div>
-                            </div>
-                        </TabPanel>
-                        <TabPanel value={1}>
-                            <div className='channel-board'>
-                                <div className='channel-board-main'>
-                                    <div>卓越任务</div>
-                                    <div>算法史</div>
-                                </div>
-                                <div className='channel-board-more'>
-                                    <Link to='/ideology' ><div>更多</div></Link>
-                                </div>
-                            </div>
-                        </TabPanel>
-                    </TabsUnstyled>
-                    </div>
-                </div>
-                <div className='intro-channel-right'>
-                    <div className='channel-right-top'>
-                    <TabsUnstyled defaultValue={0}>
-                        <div className='channel-line'>
-                            <TabsList>
-                                <TabUn>实战示例</TabUn>
-                            </TabsList>
-                        </div>
-                        <TabPanel value={0}>
-                            <div className='channel-board'>
-                                <div className='channel-board-mmain'>
-                                    <div>排序</div>
-                                    <div>动态规划</div>
-                                </div>
-                                <div className='channel-board-more'>
-                                    <Link to='/algorithm' ><div>更多</div></Link>
-                                </div>
-                            </div>
-                        </TabPanel>
-                    </TabsUnstyled>
-                    </div>
-                    <div className='channel-right-bottom'>
-                    <TabsUnstyled defaultValue={0}>
-                        <div className='channel-line'>
-                            <TabsList>
-                                <TabUn>相关资源</TabUn>
-                            </TabsList>
-                        </div>
-                        <TabPanel value={0}>
-                            <div className='channel-board'>
-                                <div className='channel-board-mmain'>
-                                    <div onClick={this.openEOJ}>ECNU Online Judge</div>
-                                    <div onClick={this.openDSVisu}>Data Structure</div>
-                                </div>
-                                <div className='channel-board-more'>
-                                    <Link to='/resource' ><div>更多</div></Link>
-                                </div>
-                            </div>
-                        </TabPanel>
-                    </TabsUnstyled>
-                    </div>
-                </div>
+                    </TabPanel>
+                </TabsUnstyled>
             </div>
         </div>
-        );
+
+{/* 
+        <div className='intro-channel'>
+            <div className='intro-channel-left'>
+                <div className='channel-left-top'>
+                <TabsUnstyled defaultValue={0}>
+                    <div className='channel-line'>
+                        <TabsList>
+                            <Tab>课程大纲</Tab>
+                            <Tab>课程内容</Tab>
+                            <Tab>研讨会</Tab>
+                        </TabsList>
+                        
+                    </div>
+                    <TabPanel value={0}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div><a href={pdf_2021} download='教学进度表2021'>教学进度表-2021</a></div>
+                                <div><a href={pdf_2020} download='教学大纲2020'>教学大纲-2020</a></div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/courseoutline' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                    <TabPanel value={1}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div>课程内容1</div>
+                                <div>课程内容2</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/coursecontent' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                    <TabPanel value={2}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div onClick={this.openPage1}>数字化转型与数字孪生”校庆…</div>
+                                <div onClick={this.openPage5}>计算机学院举办校庆特邀报告…</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/seminar' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                </TabsUnstyled>
+                </div>
+                <div className='channel-left-bottom'>
+                <TabsUnstyled defaultValue={1}>
+                    <div className='channel-line'>
+                        <TabsList>
+                            <Tab>团队介绍</Tab>
+                            <Tab>课程思政</Tab>
+                        </TabsList>
+                    </div>
+                    <TabPanel value={0}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div>团队介绍1</div>
+                                <div>团队介绍2</div>
+                            </div>
+                            <div className='channel-board-more'>更多</div>
+                        </div>
+                    </TabPanel>
+                    <TabPanel value={1}>
+                        <div className='channel-board'>
+                            <div className='channel-board-main'>
+                                <div>卓越任务</div>
+                                <div>算法史</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/ideology' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                </TabsUnstyled>
+                </div>
+            </div>
+            <div className='intro-channel-right'>
+                <div className='channel-right-top'>
+                <TabsUnstyled defaultValue={0}>
+                    <div className='channel-line'>
+                        <TabsList>
+                            <TabUn>实战示例</TabUn>
+                        </TabsList>
+                    </div>
+                    <TabPanel value={0}>
+                        <div className='channel-board'>
+                            <div className='channel-board-mmain'>
+                                <div>排序</div>
+                                <div>动态规划</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/algorithm' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                </TabsUnstyled>
+                </div>
+                <div className='channel-right-bottom'>
+                <TabsUnstyled defaultValue={0}>
+                    <div className='channel-line'>
+                        <TabsList>
+                            <TabUn>相关资源</TabUn>
+                        </TabsList>
+                    </div>
+                    <TabPanel value={0}>
+                        <div className='channel-board'>
+                            <div className='channel-board-mmain'>
+                                <div onClick={this.openEOJ}>ECNU Online Judge</div>
+                                <div onClick={this.openDSVisu}>Data Structure</div>
+                            </div>
+                            <div className='channel-board-more'>
+                                <Link to='/resource' ><div>更多</div></Link>
+                            </div>
+                        </div>
+                    </TabPanel>
+                </TabsUnstyled>
+                </div>
+            </div>
+        </div> */}
+    </div>
+    );
     }
 }
 
