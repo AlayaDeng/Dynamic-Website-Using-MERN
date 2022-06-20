@@ -20,7 +20,7 @@ import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 
 
 const Tab = styled(TabUnstyled)`
-    width: 120px;
+    width: 180px;
     font-family: IBM Plex Sans, sans-serif;
     color: white;
     cursor: pointer;
@@ -49,7 +49,7 @@ const Tab = styled(TabUnstyled)`
 `;
 
 const TabUn = styled(TabUnstyled)`
-    width: 120px;
+    width: 180px;
     font-family: IBM Plex Sans, sans-serif;
     color: white;
     cursor: pointer;
@@ -64,14 +64,28 @@ const TabUn = styled(TabUnstyled)`
     justify-content: center;
 `;
 
-const TabPanel = styled(TabPanelUnstyled)`
-    width: 420px
+const TabPanelLeft = styled(TabPanelUnstyled)`
+    width: 540px
     font-family: IBM Plex Sans, sans-serif;
     font-size: 1.2rem;
 `;
 
-const TabsList = styled(TabsListUnstyled)`
-    width: 420px;
+const TabsListLeft = styled(TabsListUnstyled)`
+    width: 540px;
+    border-radius: 8px;
+    margin: 6px 1px 6px 5px;
+    display: flex;
+    
+`;
+
+const TabPanelRight = styled(TabPanelUnstyled)`
+    width: 400px
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 1.2rem;
+`;
+
+const TabsListRight = styled(TabsListUnstyled)`
+    width: 480px;
     border-radius: 8px;
     margin: 6px 1px 6px 5px;
     display: flex;
@@ -111,121 +125,139 @@ class Intro extends Component {
         </div>
         <div className='intro-channel-container'>
             <div className='intro-channel-item'>&nbsp;</div>
-            <div className='intro-channel-item'>
+            <div className='intro-channel-item-left'>
                 <TabsUnstyled defaultValue={0}>
                     <div className='channels'>
-                        <TabsList>
+                        <TabsListLeft>
                             <Tab>课程大纲</Tab>
                             <Tab>课程内容</Tab>
                             <Tab>研讨会</Tab>
-                        </TabsList>
+                        </TabsListLeft>
                     </div>
-                    <TabPanel value={0}>
+                    <TabPanelLeft value={0}>
                         <div className='channel-board'>
                             <div className='channel-board-main'>
-                                <div><a href={pdf_2021} download='教学进度表2021'>教学进度表-2021</a></div>
-                                <div><a href={pdf_2020} download='教学大纲2020'>教学大纲-2020</a></div>
+                                <div><a className='a-css' href={pdf_2021} download='教学进度表2021'>教学进度表-2021</a></div>
+                                <hr className='vir-border' />
+                                <div><a className='a-css' href={pdf_2020} download='教学大纲2020'>教学大纲-2020</a></div>
+                                <hr className='vir-border' />
                             </div>
                             <div className='channel-board-more'>
-                                <Link to='/courseoutline' ><div>更多</div></Link>
+                                <Link to='/courseoutline' ><div className='more'>更多</div></Link>
                             </div>
                         </div>
-                    </TabPanel>
-                    <TabPanel value={1}>
+                    </TabPanelLeft>
+                    <TabPanelLeft value={1}>
                         <div className='channel-board'>
                             <div className='channel-board-main'>
                                 <div>课程内容1</div>
+                                <hr className='vir-border' />
                                 <div>课程内容2</div>
+                                <hr className='vir-border' />
                             </div>
                             <div className='channel-board-more'>
-                                <Link to='/coursecontent' ><div>更多</div></Link>
+                                <Link to='/coursecontent' ><div className='more'>更多</div></Link>
                             </div>
                         </div>
-                    </TabPanel>
-                    <TabPanel value={2}>
+                    </TabPanelLeft>
+                    <TabPanelLeft value={2}>
                         <div className='channel-board'>
                             <div className='channel-board-main'>
                                 <div onClick={this.openPage1}>数字化转型与数字孪生”校庆…</div>
+                                <hr className='vir-border' />
                                 <div onClick={this.openPage5}>计算机学院举办校庆特邀报告…</div>
+                                <hr className='vir-border' />
                             </div>
                             <div className='channel-board-more'>
-                                <Link to='/seminar' ><div>更多</div></Link>
+                                <Link to='/seminar' ><div className='more'>更多</div></Link>
                             </div>
                         </div>
-                    </TabPanel>
+                    </TabPanelLeft>
                 </TabsUnstyled>
             </div>
-            <div className='intro-channel-item'>
+            <div className='intro-channel-item-right'>
                 <TabsUnstyled defaultValue={0}>
                     <div className='channel-line'>
-                        <TabsList>
+                        <TabsListRight>
                             <TabUn>实战示例</TabUn>
-                        </TabsList>
+                        </TabsListRight>
                     </div>
-                    <TabPanel value={0}>
+                    <TabPanelRight value={0}>
                         <div className='channel-board'>
                             <div className='channel-board-mmain'>
                                 <div>排序</div>
+                                <hr className='vir-border' />
                                 <div>动态规划</div>
+                                <hr className='vir-border' />
                             </div>
                             <div className='channel-board-more'>
-                                <Link to='/algorithm' ><div>更多</div></Link>
+                                <Link to='/algorithm' ><div className='more'>更多</div></Link>
                             </div>
                         </div>
-                    </TabPanel>
+                    </TabPanelRight>
                 </TabsUnstyled>
             </div>
             <div className='intro-channel-item'>&nbsp;</div>
-            <div className='intro-channel-item'>
+            <div className='intro-channel-item'>&nbsp;</div>
+            <div className='intro-channel-item-left'>
                 <TabsUnstyled defaultValue={1}>
                     <div className='channel-line'>
-                        <TabsList>
+                        <TabsListLeft>
                             <Tab>团队介绍</Tab>
                             <Tab>课程思政</Tab>
-                        </TabsList>
+                        </TabsListLeft>
                     </div>
-                    <TabPanel value={0}>
+                    <TabPanelLeft value={0}>
                         <div className='channel-board'>
                             <div className='channel-board-main'>
                                 <div>团队介绍1</div>
+                                <hr className='vir-border' />
                                 <div>团队介绍2</div>
+                                <hr className='vir-border' />
                             </div>
-                            <div className='channel-board-more'>更多</div>
+                            <div className='channel-board-more'>
+                                <div className='more'>更多</div>
+                            </div>
                         </div>
-                    </TabPanel>
-                    <TabPanel value={1}>
+                    </TabPanelLeft>
+                    <TabPanelLeft value={1}>
                         <div className='channel-board'>
                             <div className='channel-board-main'>
                                 <div>卓越任务</div>
+                                <hr className='vir-border' />
                                 <div>算法史</div>
+                                <hr className='vir-border' />
                             </div>
                             <div className='channel-board-more'>
                                 <Link to='/ideology' ><div>更多</div></Link>
                             </div>
                         </div>
-                    </TabPanel>
+                    </TabPanelLeft>
                 </TabsUnstyled>
             </div>
-            <div className='intro-channel-item'>
+            <div className='intro-channel-item-right'>
                 <TabsUnstyled defaultValue={0}>
                     <div className='channel-line'>
-                        <TabsList>
+                        <TabsListRight>
                             <TabUn>相关资源</TabUn>
-                        </TabsList>
+                        </TabsListRight>
                     </div>
-                    <TabPanel value={0}>
+                    <TabPanelRight value={0}>
                         <div className='channel-board'>
                             <div className='channel-board-mmain'>
                                 <div onClick={this.openEOJ}>ECNU Online Judge</div>
+                                <hr className='vir-border' />
                                 <div onClick={this.openDSVisu}>Data Structure</div>
+                                <hr className='vir-border' />
                             </div>
                             <div className='channel-board-more'>
                                 <Link to='/resource' ><div>更多</div></Link>
                             </div>
                         </div>
-                    </TabPanel>
+                    </TabPanelRight>
                 </TabsUnstyled>
             </div>
+            <div className='intro-channel-item'>&nbsp;</div>
         </div>
 
 {/* 
