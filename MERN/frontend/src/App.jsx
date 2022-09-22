@@ -8,10 +8,19 @@ import Header from './components/Header';
 
 import Intro from './pages/Intro';
 import Algorithm from './pages/Algorithm';
-import Sort from './pages/Sort';
-import Tree from './pages/Tree';
-import Graph from './pages/Graph';
-import MotionPlan from './pages/MotionPlan';
+import Sort from './pages/algoPage/Sort';
+
+// algrx
+import Recursion from './pages/algoPage/Recursion';
+import Dp from './pages/algoPage/Dp';
+import Greedy from './pages/algoPage/Greedy';
+import Flow from './pages/algoPage/Flow';
+import Upload from './pages/algoPage/Upload';
+
+// import Tree from './pages/Tree';
+// import Graph from './pages/Graph';
+// import MotionPlan from './pages/MotionPlan';
+
 import Ideology from './pages/Ideology';
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
@@ -33,9 +42,14 @@ function App() {
             <Route path='/' element={<Intro />} />
             <Route path='/algorithm' element={<Algorithm />} />
             <Route path='/algorithm/sort' element={<Sort />} />
-            <Route path='/algorithm/tree' element={<Tree />} />
+            {/* <Route path='/algorithm/tree' element={<Tree />} />
             <Route path='/algorithm/graph' element={<Graph />} />
-            <Route path='/algorithm/motionplan' element={<MotionPlan />} />
+            <Route path='/algorithm/motionplan' element={<MotionPlan />} /> */}
+            <Route path='/algorithm/recursion' element={<Recursion />} />
+            <Route path='/algorithm/dp' element={<Dp />} />
+            <Route path='/algorithm/greedy' element={<Greedy />} />
+            <Route path='/algorithm/flow' element={<Flow />} />
+            <Route path='/algorithm/more' element={<Upload />} />
             <Route path='/ideology' element={<Ideology />}/>
             <Route path='/user' element={<Dashboard />} />
             <Route path='/login' element={<Login />} />

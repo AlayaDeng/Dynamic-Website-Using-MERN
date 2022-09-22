@@ -1,0 +1,39 @@
+@import '../../style/variables.styl'
+
+.PlotExplained
+  // margin 5vh 0
+  max-height component-height
+  width 45vw
+  background-color color-code-bg
+  background-image url(../../assets/darker-noise.png)
+  background-size 150px 150px
+  color #fff
+  font-family 'Source Code Pro', sans-serif
+  overflow hidden
+  // border-radius 3px
+  
+  h2
+    width 100%
+    padding 10px 0
+    background-color rgba(#fff, .1)
+    font-family 'Open Sans', Arial, sans-serif
+    font-weight 100
+  
+  ul
+    padding 1vh 1vw
+    list-style none
+    max-height inherit
+    overflow-y scroll
+    
+    li
+      font-size 0.8rem
+      
+      &:last-child
+        margin-bottom 100px
+  
+  @media screen and  (max-width: breakpoint-medium)
+    h2
+      font-size 1.2rem
+  
+  @media screen and  (max-width: breakpoint-small)
+    display none

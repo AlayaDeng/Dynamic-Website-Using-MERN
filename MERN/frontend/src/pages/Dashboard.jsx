@@ -40,26 +40,26 @@ function Dashboard() {
     }
 
     return (
-        <>
-        <section className='dashboard-heading'>
-            <div className='heading-h1'>Welcome {user && user.name}</div>
-            <p>Goals Dashboard</p>
-        </section>
+        <div className='dashboard'> 
+            <section className='dashboard-heading'>
+                <div className='heading-h1'>Welcome {user && user.name}</div>
+                <p>Goals Dashboard</p>
+            </section>
 
-        <GoalForm />
+            <GoalForm />
 
-        <section className='content'>
-            {goals.length > 0 ? (
-                <div className='goals'>
-                    {goals.map((goal) => (
-                    <GoalItem key={goal._id} goal={goal} />
-                    ))}
-                </div>
-            ) : (
-                <div className='heading-h3'>You have not set any goals</div>
-            )}
-        </section>
-        </>
+            <section className='content'>
+                {goals.length > 0 ? (
+                    <div className='goals'>
+                        {goals.map((goal) => (
+                        <GoalItem key={goal._id} goal={goal} />
+                        ))}
+                    </div>
+                ) : (
+                    <div className='heading-h3'>You have not set any goals</div>
+                )}
+            </section>
+        </div>
     )
 }
 

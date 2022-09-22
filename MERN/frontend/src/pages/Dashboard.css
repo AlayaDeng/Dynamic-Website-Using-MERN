@@ -1,3 +1,7 @@
+.dashboard {
+    background-color: rgba(251, 238, 226, 0.1);
+}
+
 .heading-h1 {
     font-size: 200%;
     color: rgba(89, 11, 24, 0.9);

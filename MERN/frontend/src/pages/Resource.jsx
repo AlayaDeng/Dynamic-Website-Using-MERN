@@ -32,7 +32,7 @@ class Resource extends Component {
 
     render(){
         return (
-            <div className='resource'>
+            <div className='resource' div style={{backgroundColor:'rgba(251, 238, 226, 0.1)'}}>
                 <Scarf text="相关资源" />
                 <div className='resource-board'>
                     <div className='re-board-title'>

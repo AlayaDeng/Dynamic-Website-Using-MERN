@@ -9,6 +9,7 @@ import AlgorithmCloud from '../components/IdeologyPage/AlgorithmCloud';
 // import AnnumEchart from '../components/IdeologyPage/AnnumEchart';
 // import HistoryEchart from '../components/IdeologyPage/HistoryEchart';
 import HistoryLine from '../components/IdeologyPage/HistoryLine';
+import AlgoApplication from '../components/IdeologyPage/AlgoApplication';
 
 import { useState } from 'react';
 
@@ -89,6 +90,7 @@ function CataTabs() {
             </TabPanel>
             <TabPanel value={value} index={3}>
                 <h2>近几年的算法应用</h2>
+                <AlgoApplication />
             </TabPanel>
         </Box>
     )

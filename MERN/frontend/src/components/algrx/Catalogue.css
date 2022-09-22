@@ -1,0 +1,58 @@
+.catalogueBoard {
+    padding-top: 50px;
+}
+
+.cb-btn {
+    background-color: rgba(89, 11, 24, 0.4);
+}
+
+.cb-group {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.cb-group-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #590B18;
+}
+
+
+.catalogueBoard-bar {
+    height: 40px;
+    width: 80px;
+    justify-content: center;
+    align-items: top;
+}
+
+.catabar-button {  
+    width: 160px;  
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: rgba(188, 143, 143, 0.4);  
+    border-color: rgb(188, 143, 143);  
+    color: #fff;  
+    -moz-border-radius: 3px;  
+    -webkit-border-radius: 3px;  
+    border-radius: 5px; /* future proofing */  
+    -khtml-border-radius: 5px; /* for old Konqueror browsers */  
+    text-align: center;  
+    vertical-align: middle;  
+    border: 1px solid transparent;  
+    font-weight: 900;  
+    font-size:16px;
+    cursor: pointer; 
+
+}
+
+.catabar-button:hover {
+    background-color: rgba(106, 24, 44, 0.7);
+}
+
+.catabar-button:active {
+    background-color: rgba(106, 24, 44, 0.7);
+}
+
+
+
